@@ -1,0 +1,88 @@
+#max of three numbers
+
+public static void SimonaHalep(){
+    int a;
+    int b;
+    int c;
+    read(a);
+    read(b);
+    read(c);
+    if(a>b){
+        if(a>c){
+            write(a);
+        }else{
+            write(c);
+        }
+    }
+    else{
+        if(b>c){
+            write(b);
+        }
+        else{
+            write(c);
+        }
+    }
+}
+
+
+#prime number
+
+public static void SimonaHalep(){
+    int number;
+    int i;
+    read(number);
+    if(number%2==0 && number!=2){
+        write("Number not prime!");
+        stop;
+    }
+    if(number<=1){
+        write("Number not prime!");
+        stop;
+    }
+    i=3;
+    while(i<=number/2){
+        if(number%i==0){
+            write("Number not prime");
+            stop;
+        }
+    }
+    write("Number prime");
+}
+
+#sum of n numbers
+
+public static void SimonaHalep(){
+    int number;
+    int sum=0;
+    while(number!=0){
+        sum=sum+number;
+    }
+    write(number);
+}
+
+
+#lexical errors - prime numbers
+
+public static void SimonaHalep(){
+    int 1number;
+    int i;
+    read(number);
+    if(number%2==0){
+        if(number!=2){
+        write("Number not prime!);
+        stop;
+        }
+    }
+    if(number<=1){
+        write("Number not prime!");
+        stop;
+    }
+    i=3;
+    while(i<=number/2){
+        if(number%i==0){
+            write("Number not prime");
+            stop;
+        }
+    }
+    write("Number prime");
+}
