@@ -1,0 +1,23 @@
+public static void SimonaHalep(){
+    int 1number;
+    int i;
+    read(number);
+    if(number%2==0){
+        if(number!=2){
+        write("Number not prime!);
+        stop;
+        }
+    }
+    if(number<=1){
+        write("Number not prime!");
+        stop;
+    }
+    i=3;
+    while(i<=number/2){
+        if(number%i==0){
+            write("Number not prime");
+            stop;
+        }
+    }
+    write("Number prime");
+}
