@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="93df7f0a-6d93-441a-9e23-47d22ad309a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/fa.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1Mare/ex1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1Mare/ex1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1Mare/out/production/Lab1Mare/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1Mare/out/production/Lab1Mare/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1Mare/src/Codification.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1Mare/src/Codification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1Mare/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1Mare/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="20MVoCyUfDADy2I8MEJqCgjHXHJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="FA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93df7f0a-6d93-441a-9e23-47d22ad309a4" name="Default Changelist" comment="" />
+      <created>1635854615675</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635854615675</updated>
+      <workItem from="1635854618111" duration="3552000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="533" y="171" key="#com.intellij.ide.util.MemberChooser" timestamp="1635855631431">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1635855631431" />
+    <state width="1396" height="245" key="GridCell.Tab.0.bottom" timestamp="1635858254845">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1635858254845" />
+    <state width="1396" height="245" key="GridCell.Tab.0.center" timestamp="1635858254843">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1635858254843" />
+    <state width="1396" height="245" key="GridCell.Tab.0.left" timestamp="1635858254841">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1635858254841" />
+    <state width="1396" height="245" key="GridCell.Tab.0.right" timestamp="1635858254844">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1635858254844" />
+    <state width="1396" height="304" key="GridCell.Tab.1.bottom" timestamp="1635858181352">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1635858181352" />
+    <state width="1396" height="304" key="GridCell.Tab.1.center" timestamp="1635858181349">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1635858181349" />
+    <state width="1396" height="304" key="GridCell.Tab.1.left" timestamp="1635858181348">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1635858181348" />
+    <state width="1396" height="304" key="GridCell.Tab.1.right" timestamp="1635858181350">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1396" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1635858181350" />
+  </component>
+</project>
