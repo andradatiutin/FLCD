@@ -6,7 +6,7 @@ import java.util.Map;
 public class Codification {
 
     private String[] separators = {"[", "]", "{", "}", "(", ")", ",", ";"};
-    private String[] operators = {"+", "-", "*", "/", "%", "=", "==", "!=", "!", "<", "<=", ">=", ">"};
+    private String[] operators = {"+", "-", "*", "/", "%", "=", "==", "!=", "!", "<", "<=", ">=", ">", "&&"};
     private String[] reservedWords = {"if", "else", "while", "return", "void", "int", "char", "read", "write", "public", "static", "SimonaHalep", "stop"};
     private HashMap<String, Integer> codificationTable = new HashMap<>();
     private static int index;
@@ -37,8 +37,8 @@ public class Codification {
     }
 
     public Boolean isConstant(String token) {
-        if (token.matches("^(0|[+-]?[1-9][0-9]*)$"))
-            return true;
+//        if (token.matches("^(0|[+-]?[1-9][0-9]*)$"))
+//            return true;
         if (token.length() == 3 && token.charAt(0) == '\'' && token.charAt(2) == '\'')
             return true;
         if (token.charAt(0) == '"' && token.charAt(token.length() - 1) == '"')

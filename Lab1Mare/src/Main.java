@@ -16,7 +16,7 @@ public class Main {
         int lineNumber = 1;
         int ok = 1;
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("ex3.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("ex1.txt"));
             String text = reader.readLine();
             while (text != null) {
                 List<String> tokens = codification.tokenGenerator(text);
@@ -26,7 +26,7 @@ public class Main {
                         pif.addToken(codification.getCodificationTable().get(s), -1);
                     } else if (faIdentifier.isAccepted(s)) {
                         pif.addToken(0, symTable.add(s));
-                    } else if (codification.isConstant(s)) {
+                    } else if (codification.isConstant(s) || faConstant.isAccepted(s)) {
                         pif.addToken(1, symTable.add(s));
                     } else {
                         System.out.println("Lexical error: " + s + " at location " + lineNumber);
