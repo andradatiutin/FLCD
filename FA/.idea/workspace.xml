@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93df7f0a-6d93-441a-9e23-47d22ad309a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1Mare/ST.out" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1Mare/ST.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1Mare/constant.in" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1Mare/constant.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1Mare/out/production/Lab1Mare/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1Mare/out/production/Lab1Mare/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1Mare/pif.out" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1Mare/pif.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1Mare/src/Codification.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1Mare/src/Codification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1Mare/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1Mare/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="93df7f0a-6d93-441a-9e23-47d22ad309a4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +80,7 @@
       <updated>1635854615675</updated>
       <workItem from="1635854618111" duration="3818000" />
       <workItem from="1635858547996" duration="7000" />
-      <workItem from="1635924050896" duration="4980000" />
+      <workItem from="1635924050896" duration="4989000" />
     </task>
     <servers />
   </component>
