@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -84,6 +85,43 @@ public class FA {
             }
         }
         return s;
+    }
+
+    public boolean isDFA() {
+        for (List<String> key : S.keySet()) {
+            if (S.get(key).size() > 1) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean isAccepted(String sequence) {
+        if (isDFA()) {
+            String current = q0;
+            for (int i = 0; i < sequence.length(); i++) {
+                char symbol = sequence.charAt(i);
+                List<String> list = new ArrayList<>();
+                list.add(current);
+                list.add("" + symbol);
+                if (S.containsKey(list)) {
+                    current = S.get(list).get(0);
+                } else {
+                    return false;
+                }
+            }
+            return checkFinalState(current);
+        }
+        return false;
+    }
+
+    public boolean checkFinalState(String string) {
+        for (int i = 0; i < F.length; i++) {
+            if (F[i].equals(string)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override

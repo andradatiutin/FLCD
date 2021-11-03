@@ -20,7 +20,11 @@ public class Main {
             if (option == 1) {
                 fa = reafFAfromfile();
             } else if (option == 2) {
-                printFA();
+                printFA(scanner);
+            } else if (option == 3) {
+                System.out.println(fa.isDFA());
+            } else if (option == 4) {
+                checkSequence(scanner);
             } else {
                 System.exit(0);
             }
@@ -32,6 +36,8 @@ public class Main {
         System.out.println("0. Exit");
         System.out.println("1. Read the elements of a FA.");
         System.out.println("2. Display the elements of a FA.");
+        System.out.println("3. Check DFA.");
+        System.out.println("4. Check accepted sequence.");
     }
 
     public static FA reafFAfromfile() {
@@ -86,10 +92,37 @@ public class Main {
         return new FA(Q, E, S, q0, F);
     }
 
-    public static void printFA() {
-        System.out.println(fa.printQ());
-        System.out.println(fa.printE());
-        System.out.println(fa.printS());
-        System.out.println(fa.printF());
+    public static void printFA(Scanner scanner) {
+        while (true) {
+            menuElements();
+            int option = scanner.nextInt();
+            if (option == 0) {
+                break;
+            } else if (option == 1) {
+                System.out.println(fa.printQ());
+            } else if (option == 2) {
+                System.out.println(fa.printE());
+            } else if (option == 3) {
+                System.out.println(fa.printS());
+            } else if (option == 4) {
+                System.out.println(fa.printF());
+            }
+        }
+    }
+
+    public static void menuElements() {
+        System.out.println();
+        System.out.println("0. Exit");
+        System.out.println("1. Print states");
+        System.out.println("2. Print alphabet");
+        System.out.println("3. Print transitions");
+        System.out.println("4. Print final states");
+    }
+
+    public static void checkSequence(Scanner scanner) {
+        scanner.nextLine();
+        System.out.println("Input sequence: ");
+        String sequence = scanner.nextLine();
+        System.out.println(fa.isAccepted(sequence));
     }
 }
