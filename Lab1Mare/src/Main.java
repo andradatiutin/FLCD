@@ -9,10 +9,8 @@ public class Main {
         Codification codification = new Codification();
         PIF pif = new PIF();
         SymTable symTable = new SymTable(26);
-        FA faConstant = new FA();
-        faConstant = reafFAfromfile("constant.in");
-        FA faIdentifier = new FA();
-        faIdentifier = reafFAfromfile("identifier.in");
+        FA faConstant = reafFAfromfile("constant.in");
+        FA faIdentifier = reafFAfromfile("identifier.in");
         int lineNumber = 1;
         int ok = 1;
         try {
