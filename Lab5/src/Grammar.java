@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -6,10 +7,10 @@ public class Grammar {
 
     private String[] N = {};
     private String[] E = {};
-    private HashMap<String, List<String>> P;
+    private HashMap<String, List<List<String>>> P;
     private String S;
 
-    public Grammar(String[] n, String[] e, HashMap<String, List<String>> p, String s) {
+    public Grammar(String[] n, String[] e, HashMap<String, List<List<String>>> p, String s) {
         N = n;
         E = e;
         P = p;
@@ -55,7 +56,7 @@ public class Grammar {
             s += "}";
         }
         int cnt = P.size();
-        for (Map.Entry<String, List<String>> entry : P.entrySet()) {
+        for (Map.Entry<String, List<List<String>>> entry : P.entrySet()) {
             String str = entry.getKey() + "-> ";
             cnt -= 1;
             for (int i = 0; i < entry.getValue().size(); i++)
@@ -67,15 +68,10 @@ public class Grammar {
         return s;
     }
 
-    public HashMap<String, List<String>> productionsForANonterminal(String nonterminal) {
-        HashMap<String, List<String>> hashMap = new HashMap<>();
-        for (int i = 0; i < P.size(); i++) {
-            if (P.containsKey(nonterminal)) {
-                hashMap.put(nonterminal, P.get(nonterminal));
-                return hashMap;
-            }
+    public void productionsForANonterminal(String nonterminal) {
+        if (this.P.containsKey(nonterminal)) {
+            System.out.println(this.P.get(nonterminal));
         }
-        return hashMap;
     }
 
     public boolean checkCFG() {
@@ -91,5 +87,77 @@ public class Grammar {
             }
         }
         return true;
+    }
+
+    public HashMap<String, List<List<String>>> getP() {
+        return P;
+    }
+
+    public String getS() {
+        return S;
+    }
+
+    public void setS(String s) {
+        S = s;
+    }
+
+    public boolean checkNonTerminal(String nonTerminal) {
+        for (int i = 0; i < N.length; i++) {
+            if (this.N[i].equals(nonTerminal)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public String[] getN() {
+        return N;
+    }
+
+    public String[] getE() {
+        return E;
+    }
+
+    public LinkedHashMap<HashMap<String, List<String>>,Integer> numberProduction()
+    {
+        LinkedHashMap<HashMap<String, List<String>>,Integer> number=new LinkedHashMap<>();
+        int index=1;
+        HashMap<String, List<List<String>>> productions=this.getP();
+        for(Map.Entry<String,List<List<String>>>entry : productions.entrySet())
+        {
+            String key=entry.getKey();
+            if(!key.equals("S'")) {
+                List<List<String>> values = productions.get(key);
+                for (List<String> value : values) {
+
+                    HashMap<String, List<String>> elem = new HashMap<>();
+                    elem.put(key, value);
+                    number.put(elem,index);
+                    index += 1;
+                }
+            }
+        }
+        return number;
+    }
+    public LinkedHashMap<Integer,HashMap<String, List<String>>> numberProduction2()
+    {
+        LinkedHashMap<Integer,HashMap<String, List<String>>> number=new LinkedHashMap<>();
+        int index=1;
+        HashMap<String, List<List<String>>> productions=this.getP();
+        for(Map.Entry<String,List<List<String>>>entry : productions.entrySet())
+        {
+            String key=entry.getKey();
+            if(!key.equals("S'")) {
+                List<List<String>> values = productions.get(key);
+                for (List<String> value : values) {
+
+                    HashMap<String, List<String>> elem = new HashMap<>();
+                    elem.put(key, value);
+                    number.put(index,elem);
+                    index += 1;
+                }
+            }
+        }
+        return number;
     }
 }
