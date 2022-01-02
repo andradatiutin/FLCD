@@ -1,0 +1,66 @@
+%{
+#include "scanner.h"
+#include <math.h>
+#include <stdio.h>
+%}
+%option nounput yylineno
+%option noyywrap
+
+DIGIT         [0-9]
+WORD        ["]([a-zA-Z0-9 ]*)["]
+NUMBER        0|[+-]?[1-9][0-9]*
+CHAR        ['][a-zA-Z0-9][']
+constant        {WORD}|{NUMBER}|{CHAR}
+identifier         [a-zA-Z]([a-zA-Z0-9]{0,7})
+
+%%
+
+"if"    {return IF;}
+"else"    {return ELSE;}
+"while"    {return WHILE;}
+"return"    {return RETURN;}
+"void"    {return VOID;}
+"int"    {return INT;}
+"char"    {return CHAR;}
+"read"    {return READ;}
+"write"    {return WRITE;}
+"public"    {return PUBLIC;}
+"static"    {return STATIC;}
+"SimonaHalep"    {return SimonaHalep;}
+"stop"    {return STOP;}
+
+{identifier}    {return IDENTIFIER;}
+
+{constant}    {return CONSTANT;}
+
+"+"    {return PLUS;}
+"-"    {return MINUS;}
+"*"    {return MULTIPLY;}
+"/"    {return DIVIDE;}
+"%"    {return MODULO;}
+"="    {return SIMPLE_EQUAL;}
+"=="    {return DOUBLE_EQUAL;}
+"!="    {return DIFFERENT;}
+"!"    {return NEGATION;}
+"<"    {return LESS;}
+"<="    {return LESS_OR_EQUAL;}
+">="    {return GREATER_OR_EQUAL;}
+">"    {return GREATER;}
+"["    {return LEFT_SQUARE;}
+"]"    {return RIGHT_SQUARE;}
+"{"    {return LEFT_BRACKET;}
+"}"    {return RIGHT_BRACKET;}
+"("    {return LEFT_ROUND;}
+")"    {return RIGHT_ROUND;}
+","    {return COMA;}
+";"    {return SEMI_COLON;}
+
+[ \t]+  {}
+
+[\n]+   {}
+         
+[a-zA-Z][a-zA-Z0-9]{8,}    {printf("Illegal size of the identifier \n"); return -1;}
+[0-9][a-zA-Z0-9]{0,7}    {printf("Illegal identifier \n"); return -1;}
+.    {printf("Illegal symbol \n"); return -1;}
+%%  
+
